@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Subur.Goods.Delivery": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "4xgoL7hd5yc=",
+  "success": true,
+  "projectFilePath": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oktav\\.nuget\\packages\\duende.identitymodel\\7.0.0\\duende.identitymodel.7.0.0.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.2\\microsoft.extensions.configuration.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.2\\microsoft.extensions.configuration.abstractions.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.2\\microsoft.extensions.configuration.binder.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.2\\microsoft.extensions.dependencyinjection.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.2\\microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.diagnostics\\9.0.2\\microsoft.extensions.diagnostics.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\9.0.2\\microsoft.extensions.diagnostics.abstractions.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.http\\9.0.2\\microsoft.extensions.http.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.logging\\9.0.2\\microsoft.extensions.logging.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.2\\microsoft.extensions.logging.abstractions.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.options\\9.0.2\\microsoft.extensions.options.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\9.0.2\\microsoft.extensions.options.configurationextensions.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.2\\microsoft.extensions.primitives.9.0.2.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512",
+    "C:\\Users\\oktav\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.2\\system.diagnostics.diagnosticsource.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

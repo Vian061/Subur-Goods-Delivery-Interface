@@ -1,0 +1,7 @@
+﻿{
+  "Api_Url": "http://192.168.1.15:42000",
+  "IS4_Base_Url": "https://tokosuburjaya.com",
+  "Client_id": "client_id",
+  "Client_secret": "client_secret",
+  "Scope": "scope"
+}
