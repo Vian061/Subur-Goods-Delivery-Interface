@@ -7,6 +7,26 @@
       "RelativeMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|solutionrelative:subur.goods.delivery\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|d:\\office\\c#\\interface\\subur.goods.delivery\\subur.goods.delivery\\appconfig.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|solutionrelative:subur.goods.delivery\\appconfig.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|d:\\office\\c#\\interface\\subur.goods.delivery\\subur.goods.delivery\\helper\\b2ctokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|solutionrelative:subur.goods.delivery\\helper\\b2ctokenhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|d:\\office\\c#\\interface\\subur.goods.delivery\\subur.goods.delivery\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|solutionrelative:subur.goods.delivery\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|d:\\office\\c#\\interface\\subur.goods.delivery\\subur.goods.delivery\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|solutionrelative:subur.goods.delivery\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|d:\\office\\c#\\interface\\subur.goods.delivery\\subur.goods.delivery\\appconfig.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|solutionrelative:subur.goods.delivery\\appconfig.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|d:\\office\\c#\\interface\\subur.goods.delivery\\subur.goods.delivery\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|solutionrelative:subur.goods.delivery\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
@@ -29,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|d:\\office\\c#\\interface\\subur.goods.delivery\\subur.goods.delivery\\helper\\loghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA638906-0319-483F-B07F-5F4180C42C30}|Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj|solutionrelative:subur.goods.delivery\\helper\\loghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\appconfig.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Subur.Goods.Delivery\\appconfig.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\appconfig.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Subur.Goods.Delivery\\appconfig.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 248,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +86,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "B2CTokenHandler.cs",
+              "DocumentMoniker": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Helper\\B2CTokenHandler.cs",
+              "RelativeDocumentMoniker": "Subur.Goods.Delivery\\Helper\\B2CTokenHandler.cs",
+              "ToolTip": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Helper\\B2CTokenHandler.cs",
+              "RelativeToolTip": "Subur.Goods.Delivery\\Helper\\B2CTokenHandler.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvwwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T06:13:19.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Subur.Goods.Delivery\\Services\\TokenService.cs",
+              "ToolTip": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Services\\TokenService.cs",
+              "RelativeToolTip": "Subur.Goods.Delivery\\Services\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T03:10:46.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Services\\Interfaces\\ITokenService.cs",
+              "RelativeDocumentMoniker": "Subur.Goods.Delivery\\Services\\Interfaces\\ITokenService.cs",
+              "ToolTip": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Services\\Interfaces\\ITokenService.cs",
+              "RelativeToolTip": "Subur.Goods.Delivery\\Services\\Interfaces\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T03:10:20.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "README.md",
               "DocumentMoniker": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\README.md",
               "RelativeDocumentMoniker": "Subur.Goods.Delivery\\README.md",
@@ -87,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "appconfig.development.json",
               "DocumentMoniker": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\appconfig.development.json",
               "RelativeDocumentMoniker": "Subur.Goods.Delivery\\appconfig.development.json",
@@ -95,11 +146,12 @@
               "RelativeToolTip": "Subur.Goods.Delivery\\appconfig.development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-27T12:11:15.251Z"
+              "WhenOpened": "2025-02-27T12:11:15.251Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "appconfig.production.json",
               "DocumentMoniker": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\appconfig.production.json",
               "RelativeDocumentMoniker": "Subur.Goods.Delivery\\appconfig.production.json",
@@ -107,11 +159,12 @@
               "RelativeToolTip": "Subur.Goods.Delivery\\appconfig.production.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-27T10:56:45.504Z"
+              "WhenOpened": "2025-02-27T10:56:45.504Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Constants.cs",
               "DocumentMoniker": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Constants.cs",
               "RelativeDocumentMoniker": "Subur.Goods.Delivery\\Constants.cs",
@@ -119,11 +172,12 @@
               "RelativeToolTip": "Subur.Goods.Delivery\\Constants.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T10:52:58.905Z"
+              "WhenOpened": "2025-02-27T10:52:58.905Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "HttpServices.cs",
               "DocumentMoniker": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Services\\HttpServices.cs",
               "RelativeDocumentMoniker": "Subur.Goods.Delivery\\Services\\HttpServices.cs",
@@ -131,11 +185,12 @@
               "RelativeToolTip": "Subur.Goods.Delivery\\Services\\HttpServices.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAmwA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T10:36:34.437Z"
+              "WhenOpened": "2025-02-27T10:36:34.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "IHttpServices.cs",
               "DocumentMoniker": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Services\\Interfaces\\IHttpServices.cs",
               "RelativeDocumentMoniker": "Subur.Goods.Delivery\\Services\\Interfaces\\IHttpServices.cs",
@@ -143,11 +198,12 @@
               "RelativeToolTip": "Subur.Goods.Delivery\\Services\\Interfaces\\IHttpServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T10:36:11.052Z"
+              "WhenOpened": "2025-02-27T10:36:11.052Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "LogHelper.cs",
               "DocumentMoniker": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Helper\\LogHelper.cs",
               "RelativeDocumentMoniker": "Subur.Goods.Delivery\\Helper\\LogHelper.cs",
@@ -155,11 +211,12 @@
               "RelativeToolTip": "Subur.Goods.Delivery\\Helper\\LogHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T06:20:13.099Z"
+              "WhenOpened": "2025-02-27T06:20:13.099Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "AppConfig.cs",
               "DocumentMoniker": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Models\\AppConfig.cs",
               "RelativeDocumentMoniker": "Subur.Goods.Delivery\\Models\\AppConfig.cs",
@@ -167,7 +224,8 @@
               "RelativeToolTip": "Subur.Goods.Delivery\\Models\\AppConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T06:18:26.109Z"
+              "WhenOpened": "2025-02-27T06:18:26.109Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -177,7 +235,7 @@
               "RelativeDocumentMoniker": "Subur.Goods.Delivery\\Program.cs",
               "ToolTip": "D:\\Office\\C#\\Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery\\Program.cs",
               "RelativeToolTip": "Subur.Goods.Delivery\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T02:52:01.057Z",
               "EditorCaption": ""
