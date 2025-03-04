@@ -27,40 +27,26 @@ namespace Subur.Goods.Delivery.Services
 			}
 			else
 			{
-				throw new Exception(response.ReasonPhrase);
+				throw new Exception(response.RequestMessage?.ToString() ?? response.ReasonPhrase);
 			}
 		}
 
-		public async Task<T?> PostAsync<T>(string url, T data) where T : class
+		public async Task<HttpResponseMessage> PostAsync<T>(string url, T data) where T : class
 		{
 			string json = JsonSerializer.Serialize(data);
 			HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
 			HttpResponseMessage response = await _httpClient.PostAsync(url, content);
-			if (response.IsSuccessStatusCode)
-			{
-				string responseContent = await response.Content.ReadAsStringAsync();
-				return JsonSerializer.Deserialize<T>(responseContent);
-			}
-			else
-			{
-				throw new Exception(response.ReasonPhrase);
-			}
+
+			return response;
 		}
 
-		public async Task<T?> PutAsync<T>(string url, T data) where T : class
+		public async Task<HttpResponseMessage> PutAsync<T>(string url, T data) where T : class
 		{
 			string json = JsonSerializer.Serialize(data);
 			HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
 			HttpResponseMessage response = await _httpClient.PutAsync(url, content);
-			if (response.IsSuccessStatusCode)
-			{
-				string responseContent = await response.Content.ReadAsStringAsync();
-				return JsonSerializer.Deserialize<T>(responseContent);
-			}
-			else
-			{
-				throw new Exception(response.ReasonPhrase);
-			}
+
+			return response;
 		}
 
 		public async Task<HttpResponseMessage> DeleteAsync(string url)
@@ -72,7 +58,7 @@ namespace Subur.Goods.Delivery.Services
 			}
 			else
 			{
-				throw new Exception(response.ReasonPhrase);
+				throw new Exception(response.RequestMessage?.ToString() ?? response.ReasonPhrase);
 			}
 		}
 	}

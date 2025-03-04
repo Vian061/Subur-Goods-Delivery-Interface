@@ -2,6 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/.vs/
 /.vs/Subur.Goods.Delivery/FileContentIndex/024c0e52-161c-4d4d-ac0f-9493b78c8386.vsidx
 /.vs/Subur.Goods.Delivery/FileContentIndex/19ed4c96-d5fc-404d-8d21-c948b7835a6e.vsidx
 /.vs/Subur.Goods.Delivery/FileContentIndex/43434cf2-fb99-45a5-a87b-5bbedb1e1662.vsidx

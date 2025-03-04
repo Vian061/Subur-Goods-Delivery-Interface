@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Subur.Goods.Delivery")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47750bf50ba42741167272822a86a23ea386d349")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d8909fd827b0b8b2c3d8ab55abce2a311e3489c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Subur.Goods.Delivery")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Subur.Goods.Delivery")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

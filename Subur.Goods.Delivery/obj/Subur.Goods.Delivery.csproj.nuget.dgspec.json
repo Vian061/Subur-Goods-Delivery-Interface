@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Visual Studio 2019\\Projects\\Subur.Cartrack.Console.FinishGoodsDelivery\\Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj": {}
+    "D:\\Office\\C#\\Interface\\Subur-Goods-Delivery-Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Visual Studio 2019\\Projects\\Subur.Cartrack.Console.FinishGoodsDelivery\\Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj": {
+    "D:\\Office\\C#\\Interface\\Subur-Goods-Delivery-Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Visual Studio 2019\\Projects\\Subur.Cartrack.Console.FinishGoodsDelivery\\Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj",
+        "projectUniqueName": "D:\\Office\\C#\\Interface\\Subur-Goods-Delivery-Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj",
         "projectName": "Subur.Goods.Delivery",
-        "projectPath": "D:\\Documents\\Visual Studio 2019\\Projects\\Subur.Cartrack.Console.FinishGoodsDelivery\\Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj",
-        "packagesPath": "C:\\Users\\eRiCk\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Visual Studio 2019\\Projects\\Subur.Cartrack.Console.FinishGoodsDelivery\\Subur.Goods.Delivery\\obj\\",
+        "projectPath": "D:\\Office\\C#\\Interface\\Subur-Goods-Delivery-Interface\\Subur.Goods.Delivery\\Subur.Goods.Delivery.csproj",
+        "packagesPath": "C:\\Users\\oktav\\.nuget\\packages\\",
+        "outputPath": "D:\\Office\\C#\\Interface\\Subur-Goods-Delivery-Interface\\Subur.Goods.Delivery\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\eRiCk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\oktav\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,13 +50,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
             "Duende.IdentityModel": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[0.0.0, )"
+              "version": "[9.0.2, )"
             },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
@@ -74,6 +77,14 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.21.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Subur.Extension": {
+              "target": "Package",
+              "version": "[1.1.20, )"
             }
           },
           "imports": [

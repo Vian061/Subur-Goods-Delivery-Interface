@@ -14,9 +14,24 @@
 		/// </summary>
 		/// <param name="message"></param>
 		/// <param name="isError"></param>
-		public static void LogMessage(string message, bool isError = false)
+		public static void LogMessage(string message)
 		{
-			string logType = isError ? "ERROR" : "INFO";
+			string logType = "INFO";
+			string logEntry = $"{DateTime.Now:dd-MMM-yyyy HH:mm:ss} [{logType}] {message}";
+
+			using (StreamWriter writer = new StreamWriter(logFilePath, true))
+			{
+				writer.WriteLine(logEntry);
+			}
+		}
+
+		/// <summary>
+		/// Log an error message to the log file
+		/// </summary>
+		/// <param name="message"></param>
+		public static void LogErrorMessage(string message)
+		{
+			string logType = "ERROR";
 			string logEntry = $"{DateTime.Now:dd-MMM-yyyy HH:mm:ss} [{logType}] {message}";
 
 			using (StreamWriter writer = new StreamWriter(logFilePath, true))
