@@ -40,6 +40,10 @@ namespace Subur.Goods.Delivery
 				}
 
 				HttpResponseMessage finishResponse = await _suburApiService.PutAsync(Constants.UrlConstans.GoodsDeliveryPaged, goodsDelivery);
+				if(!finishResponse.IsSuccessStatusCode)
+				{
+					LogHelper.LogErrorMessage($"Update Failed: {finishResponse.ReasonPhrase}");
+				}
 				Console.WriteLine($"Finish Program with status code: {finishResponse.StatusCode}");
 
 				Environment.Exit(0);
