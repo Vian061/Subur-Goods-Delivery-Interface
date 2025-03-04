@@ -4,7 +4,8 @@ This Project is to  automate finish delivery of goods at [Cartrack](https://www.
 # Flow
 The flow of the project is as follows:<br>
 1. Get the list of delivery orders from the database
-1. Store the data into subur SQL Server Internal Message in MPSJ Integration Database with message type = 11012
+1. Send the data to the Subur B2C Service API
+1. The data will proceed by the Subur B2C Service API
 
 # Specs
 
