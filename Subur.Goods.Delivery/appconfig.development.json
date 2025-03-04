@@ -1,5 +1,5 @@
 ﻿{
-	"Api_Url": "https://tokosuburjaya.com:17800",
+	"Api_Url": "http://192.168.1.15:42023",
 	"IS4_Base_Url": "http://192.168.1.15:44310",
 	"CarTrack_Base_Url": "https://fleetapi-id.cartrack.com",
 	"CarTrack_Auth_Key": "MITR00020:e0426cc2d39696c7e679deab4a27297bddf23a8b639834dfb7501831262fc70e",

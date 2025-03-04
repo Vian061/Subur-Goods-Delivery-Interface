@@ -1,3 +1,4 @@
 28-Feb-2025 08:15:12 [INFO] Application started at production mode.
 28-Feb-2025 08:15:12 [ERROR] Could not find file 'D:\Office\C#\Interface\Subur.Goods.Delivery\Subur.Goods.Delivery\bin\Release\net8.0\appconfig.production.json'.
 28-Feb-2025 08:17:55 [INFO] Application started at production mode.
+04-Mar-2025 13:52:18 [ERROR] Update Failed: Unauthorized

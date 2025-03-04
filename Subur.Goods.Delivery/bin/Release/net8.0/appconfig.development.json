@@ -1,7 +1,11 @@
 ﻿{
-  "Api_Url": "http://192.168.1.15:42000",
-  "IS4_Base_Url": "https://tokosuburjaya.com",
-  "Client_id": "client_id",
-  "Client_secret": "client_secret",
-  "Scope": "scope"
+	"Api_Url": "https://tokosuburjaya.com:17800",
+	"IS4_Base_Url": "http://192.168.1.15:44310",
+	"CarTrack_Base_Url": "https://fleetapi-id.cartrack.com",
+	"CarTrack_Auth_Key": "MITR00020:e0426cc2d39696c7e679deab4a27297bddf23a8b639834dfb7501831262fc70e",
+	"Client_id": "B2C_Goods_Delivery_Interface",
+	"Client_secret": "B2C_Goods_Delivery_Interface",
+	"Scope": "Create Update Delete Read General_Scope B2C_CMS_Scope B2B-LogisticService",
+	"Username_Subur": "interface",
+	"Password_Subur": "P@ssw0rd!@#"
 }
