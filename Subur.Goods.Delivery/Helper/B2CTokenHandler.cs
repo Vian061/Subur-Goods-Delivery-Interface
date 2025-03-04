@@ -1,16 +1,11 @@
 ﻿using Duende.IdentityModel.Client;
 using Subur.Goods.Delivery.Models.Subur;
 using Subur.Goods.Delivery.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Subur.Goods.Delivery.Helper
 {
-	public class B2CTokenHandler: DelegatingHandler
+	public class B2CTokenHandler : DelegatingHandler
 	{
 		private readonly ITokenService _tokenService;
 		private readonly AppConfig _appConfig;
@@ -21,8 +16,9 @@ namespace Subur.Goods.Delivery.Helper
 		}
 		protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
 		{
-			ClientCredentialsTokenRequest clientCredentialsToken = new ClientCredentialsTokenRequest {
-				Address = _appConfig.IS4_Base_Url+"/connect/token",
+			ClientCredentialsTokenRequest clientCredentialsToken = new ClientCredentialsTokenRequest
+			{
+				Address = _appConfig.IS4_Base_Url + "/connect/token",
 				ClientId = _appConfig.Client_id,
 				ClientSecret = _appConfig.Client_secret,
 				Scope = _appConfig.Scope

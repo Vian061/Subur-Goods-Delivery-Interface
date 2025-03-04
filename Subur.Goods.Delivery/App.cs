@@ -1,11 +1,6 @@
 ﻿using Subur.Goods.Delivery.Helper;
 using Subur.Goods.Delivery.Models.Subur;
 using Subur.Goods.Delivery.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Subur.Goods.Delivery
 {
@@ -40,7 +35,7 @@ namespace Subur.Goods.Delivery
 				}
 
 				HttpResponseMessage finishResponse = await _suburApiService.PutAsync(Constants.UrlConstans.GoodsDeliveryPaged, goodsDelivery);
-				if(!finishResponse.IsSuccessStatusCode)
+				if (!finishResponse.IsSuccessStatusCode)
 				{
 					LogHelper.LogErrorMessage($"Update Failed: {finishResponse.ReasonPhrase}");
 				}

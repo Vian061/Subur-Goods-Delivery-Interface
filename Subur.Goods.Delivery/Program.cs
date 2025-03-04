@@ -9,7 +9,6 @@ using Subur.Goods.Delivery.Helper;
 using Subur.Goods.Delivery.Models.Subur;
 using Subur.Goods.Delivery.Services;
 using Subur.Goods.Delivery.Services.Interfaces;
-using System.Linq.Expressions;
 using System.Text;
 using System.Text.Json;
 
@@ -100,10 +99,10 @@ IHostBuilder CreateHostBuilder(string[] strings)
 				client.DefaultRequestHeaders.Clear();
 				client.DefaultRequestHeaders.Add("Accept", "application/json");
 				client.DefaultRequestHeaders.Add("Basic", Convert.ToBase64String(authToken));
-			});	
+			});
 
 			#endregion
-			
+
 			//#region Error LogClient
 
 			//ClientCredential exceptionClientCredential = exceptionSetting.ClientCredential!;

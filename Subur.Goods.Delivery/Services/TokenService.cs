@@ -1,7 +1,6 @@
 ﻿using Duende.IdentityModel.Client;
 using Newtonsoft.Json;
 using Subur.Goods.Delivery.Services.Interfaces;
-using System.Net.Http;
 
 namespace Subur.Goods.Delivery.Services
 {
