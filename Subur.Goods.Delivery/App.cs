@@ -34,7 +34,7 @@ namespace Subur.Goods.Delivery
 					goodsDelivery.AddRange(response.Results);
 				}
 
-				HttpResponseMessage finishResponse = await _suburApiService.PutAsync(Constants.UrlConstans.GoodsDeliveryPaged, goodsDelivery);
+				HttpResponseMessage finishResponse = await _b2cApiService.PutAsync(Constants.UrlConstans.FinishShipment, goodsDelivery);
 				if (!finishResponse.IsSuccessStatusCode)
 				{
 					LogHelper.LogErrorMessage($"Update Failed: {finishResponse.ReasonPhrase}");

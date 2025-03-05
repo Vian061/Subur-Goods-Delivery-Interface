@@ -11,6 +11,7 @@ namespace Subur.Goods.Delivery.Services
 		public HttpService(HttpClient httpClient)
 		{
 			_httpClient = httpClient;
+			_httpClient.Timeout = TimeSpan.FromMinutes(5);
 		}
 
 		public async Task<T?> GetAsync<T>(string url) where T : class
