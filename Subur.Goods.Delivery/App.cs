@@ -34,6 +34,12 @@ namespace Subur.Goods.Delivery
 					goodsDelivery.AddRange(response.Results);
 				}
 
+				if(goodsDelivery.Count == 0)
+				{
+					Console.WriteLine("No data found!");
+					Console.WriteLine("Exiting Application!");
+					Environment.Exit(0);
+				}
 				HttpResponseMessage finishResponse = await _b2cApiService.PutAsync(Constants.UrlConstans.FinishShipment, goodsDelivery);
 				if (!finishResponse.IsSuccessStatusCode)
 				{
