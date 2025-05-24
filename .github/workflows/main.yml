@@ -1,0 +1,67 @@
+name: Subur Signal R Message Hub CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:  
+  build-and-deploy-store:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ${{ matrix.runner }} 
+    strategy:
+      matrix:
+        runner: [GoodsDelivery02, GoodsDelivery03, GoodsDelivery04, GoodsDelivery05, GoodsDelivery06, GoodsDelivery07, GoodDeliveryCloud]
+        include:
+          - branch: main
+            ip: "192.168.1.10"
+            destination: "D:\\Subur"
+            environment: "Production"
+            configuration: "Release"
+            service_name: "SuburGoodsDeliveryService"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+        
+      - name: Build ${{ matrix.environment }} on ${{ matrix.branch }}
+        if: github.ref == format('refs/heads/{0}', matrix.branch)    
+        shell: pwsh
+        run: |
+          $projectPath = "./Subur.Goods.Delivery.csproj"
+          dotnet build $projectPath -c ${{ matrix.configuration }}
+        env:
+          ASPNETCORE_ENVIRONMENT: ${{ matrix.environment }}
+
+      - name: Publish Application
+        run: |
+          $projectPath = "./Subur.Goods.Delivery.csproj"
+          
+          if (Test-Path ./publish) { Remove-Item -Path ./publish/* -Recurse -Force }
+          
+          dotnet publish $projectPath -c ${{ matrix.configuration }} /p:EnvironmentName=${{ matrix.environment }} -o publish 
+      - name: Deploy to ${{ matrix.ip }} -> ${{ matrix.destination }}
+        shell: pwsh
+        run: |
+          $destination = "${{ matrix.destination }}\GoodsDelivery"
+          $serviceName = "${{ matrix.service_name }}"
+          $source = Get-ChildItem -Recurse ./publish
+          Invoke-Command -ComputerName ${{ matrix.ip }} -ScriptBlock {
+              param($destination, $source, $serviceName)
+              # Stop the Windows Service
+              if (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) {
+                Stop-Service -Name $serviceName -Force
+                Start-Sleep -Seconds 5
+              }
+              # Ensure directory exists
+              if (!(Test-Path $destination)) { New-Item -Path $destination -ItemType Directory -Force }
+              # Copy files to the destination
+              Copy-Item -Path $source.FullName -Destination $destination -Recurse -Force
+              # Start the service
+              Start-Service -Name $serviceName
+          } -ArgumentList $destination, $source, $serviceName
