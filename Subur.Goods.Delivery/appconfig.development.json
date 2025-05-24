@@ -7,5 +7,6 @@
 	"Client_secret": "B2C_Goods_Delivery_Interface",
 	"Scope": "Create Update Delete Read General_Scope B2C_CMS_Scope B2B-LogisticService",
 	"Username_Subur": "interface",
-	"Password_Subur": "P@ssw0rd!@#"
+	"Password_Subur": "P@ssw0rd!@#",
+	"Local_Api_Url": "http://192.168.1.15:8168"
 }

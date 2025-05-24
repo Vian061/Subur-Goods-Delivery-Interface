@@ -6,5 +6,7 @@
 		Task<HttpResponseMessage> PostAsync<T>(string url, T data) where T : class;
 		Task<HttpResponseMessage> PutAsync<T>(string url, T data) where T : class;
 		Task<HttpResponseMessage> DeleteAsync(string url);
+
+		Task<HttpResponseMessage> PostObjectAsync(string url, object content);
 	}
 }

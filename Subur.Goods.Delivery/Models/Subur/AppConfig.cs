@@ -42,6 +42,11 @@
 		/// The password for the api subur
 		/// </summary>
 		public string Password_Subur { get; set; } = "";
+
+		/// <summary>
+		/// Local API url in Store
+		/// </summary>
+		public string Local_Api_Url { get; set; } = "";
 	}
 
 }

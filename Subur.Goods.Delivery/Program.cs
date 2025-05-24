@@ -20,6 +20,7 @@ environment = "development";
 environment = "production";
 #endif
 
+environment = "production";
 string appConfigPath = $"appconfig.{environment}.json";
 Console.WriteLine($"App environtment: {environment}");
 
@@ -67,6 +68,7 @@ IHostBuilder CreateHostBuilder(string[] strings)
 			services.AddSingleton<ITokenService, TokenService>();
 			services.AddSingleton<B2CTokenHandler>();
 			services.AddSingleton<SuburTokenHandler>();
+			services.AddSingleton<LocalSuburTokenHandler>();
 
 			#region Subur Api Client
 
@@ -78,6 +80,20 @@ IHostBuilder CreateHostBuilder(string[] strings)
 			}).AddHttpMessageHandler<SuburTokenHandler>();
 
 			#endregion
+
+
+
+			#region Local Subur Api Client
+
+			services.AddHttpClient<IHttpService, HttpService>(Constants.AppConstants.LocalSuburClient, client =>
+			{
+				client.BaseAddress = new Uri(appConfig!.Local_Api_Url);
+				client.DefaultRequestHeaders.Clear();
+				client.DefaultRequestHeaders.Add("Accept", "application/json");
+			}).AddHttpMessageHandler<LocalSuburTokenHandler>();
+
+			#endregion
+
 
 			#region B2C Service Client
 

@@ -6,48 +6,77 @@ namespace Subur.Goods.Delivery
 {
 	internal class App
 	{
-		private readonly AppConfig _config;
 		private readonly HttpService _b2cApiService;
-		private readonly HttpService _carTrackApiService;
-		private readonly HttpService _suburApiService;
+		private readonly HttpService _suburLocalApiService;
 
 		public App(AppConfig config, IHttpClientFactory httpClientFactory)
 		{
-			_config = config;
 			_b2cApiService = new HttpService(httpClientFactory.CreateClient(Constants.AppConstants.B2CServiceClient));
-			_carTrackApiService = new HttpService(httpClientFactory.CreateClient(Constants.AppConstants.CarTrackHttpClient));
-			_suburApiService = new HttpService(httpClientFactory.CreateClient(Constants.AppConstants.SuburClient));
+			_suburLocalApiService = new HttpService(httpClientFactory.CreateClient(Constants.AppConstants.LocalSuburClient));
 		}
 
 		public async Task RunAsync(string[] args)
 		{
 			try
 			{
-				Console.WriteLine("Executing Program!");
-
-				int pageNumber = 1;
-				int pageSize = 50;
-				List<GoodsDeliveryModel> goodsDelivery = [];
-				PagedResult<GoodsDeliveryModel>? response = await LoadGoodsDelivery(pageNumber, pageSize);
-				if (response != null)
+				if (args.Count() > 0)
 				{
-					goodsDelivery.AddRange(response.Results);
-				}
+					switch (args[0].ToUpper())
+					{
+						case "CLOSE_DELIVERY":
 
-				if(goodsDelivery.Count == 0)
-				{
-					Console.WriteLine("No data found!");
-					Console.WriteLine("Exiting Application!");
+							Console.WriteLine("Executing Program -> CLOSE_DELIVERY");
+
+							int pageNumber = 1;
+							int pageSize = 50;
+							List<GoodsDeliveryModel> goodsDelivery = [];
+							PagedResult<GoodsDeliveryModel>? response = await LoadGoodsDelivery(pageNumber, pageSize);
+							if (response != null)
+							{
+								goodsDelivery.AddRange(response.Results);
+							}
+
+							if (goodsDelivery.Count == 0)
+							{
+								Console.WriteLine("No data found!");
+								Console.WriteLine("Exiting Application!");
+								Environment.Exit(0);
+							}
+							HttpResponseMessage finishResponse = await _b2cApiService.PutAsync(Constants.UrlConstans.FinishShipment, goodsDelivery);
+							if (!finishResponse.IsSuccessStatusCode)
+							{
+								LogHelper.LogErrorMessage($"Update Failed: {finishResponse.ReasonPhrase}");
+							}
+							Console.WriteLine($"Finish Program with status code: {finishResponse.StatusCode}");
+
+							break;
+
+						case "CREATE_DELIVERY":
+
+							Console.WriteLine("Executing Program -> CREATE_DELIVERY");
+							var goodsDeliveries = await _suburLocalApiService.GetAsync<List<GoodsDeliveryModel>>(Constants.UrlConstans.GetCartrackGoodsDelivery.Replace("{date}", DateTime.Now.ToString("yyyyMMdd")));
+							if (goodsDeliveries.Count > 0)
+							{
+								var retVal = await _b2cApiService.PostObjectAsync(Constants.UrlConstans.CreateGoodsDelivery, goodsDeliveries.ToArray());
+								if (!retVal.IsSuccessStatusCode)
+								{
+									LogHelper.LogErrorMessage($"CREATE_DELIVERY: {retVal.ReasonPhrase}");
+								}
+								else
+								{
+									retVal = await _suburLocalApiService.PutAsync(Constants.UrlConstans.UpdateCartrackGoodsDelivery, goodsDeliveries.Select(_ => _.Alias).ToArray());
+									if (!retVal.IsSuccessStatusCode)
+									{
+										LogHelper.LogErrorMessage($"CREATE_DELIVERY: {retVal.ReasonPhrase}");
+									}
+								}
+							}
+
+							break;
+					}
+
 					Environment.Exit(0);
 				}
-				HttpResponseMessage finishResponse = await _b2cApiService.PutAsync(Constants.UrlConstans.FinishShipment, goodsDelivery);
-				if (!finishResponse.IsSuccessStatusCode)
-				{
-					LogHelper.LogErrorMessage($"Update Failed: {finishResponse.ReasonPhrase}");
-				}
-				Console.WriteLine($"Finish Program with status code: {finishResponse.StatusCode}");
-
-				Environment.Exit(0);
 			}
 			catch (OperationCanceledException ex)
 			{

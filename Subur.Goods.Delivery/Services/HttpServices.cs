@@ -1,4 +1,5 @@
 ﻿using Subur.Goods.Delivery.Services.Interfaces;
+using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 
@@ -7,6 +8,11 @@ namespace Subur.Goods.Delivery.Services
 	public class HttpService : IHttpService
 	{
 		private readonly HttpClient _httpClient;
+
+		JsonSerializerOptions options = new JsonSerializerOptions
+		{
+			PropertyNameCaseInsensitive = true // optional
+		};
 
 		public HttpService(HttpClient httpClient)
 		{
@@ -20,7 +26,7 @@ namespace Subur.Goods.Delivery.Services
 			if (response.IsSuccessStatusCode)
 			{
 				string content = await response.Content.ReadAsStringAsync();
-				return JsonSerializer.Deserialize<T>(content);
+				return JsonSerializer.Deserialize<T>(content, options);
 			}
 			else
 			{
@@ -36,6 +42,14 @@ namespace Subur.Goods.Delivery.Services
 
 			return response;
 		}
+
+		public async Task<HttpResponseMessage> PostObjectAsync(string url, object content)
+		{
+			var response = await _httpClient.PostAsJsonAsync(url, content);
+
+			return response;
+		}
+
 
 		public async Task<HttpResponseMessage> PutAsync<T>(string url, T data) where T : class
 		{

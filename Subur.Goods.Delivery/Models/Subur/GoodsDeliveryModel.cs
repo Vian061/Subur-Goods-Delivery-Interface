@@ -1,4 +1,5 @@
 ﻿using Subur.Goods.Delivery.Models.Base;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace Subur.Goods.Delivery.Models.Subur

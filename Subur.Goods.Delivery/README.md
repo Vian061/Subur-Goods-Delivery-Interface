@@ -1,5 +1,6 @@
 # Description
-This Project is to  automate finish delivery of goods at [Cartrack](https://www.cartrack.id/id/) delivery module.<br>
+This Project is to automate finish delivery of goods at [Cartrack](https://www.cartrack.id/id/) delivery module.
+It also be used for create new delivery goods from store POS.<br>
 
 # Flow
 The flow of the project is as follows:<br>

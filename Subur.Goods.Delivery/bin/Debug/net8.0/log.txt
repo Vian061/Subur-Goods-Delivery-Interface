@@ -12,3 +12,42 @@
 04-Mar-2025 14:07:33 [ERROR] Update Failed: Service Unavailable
 04-Mar-2025 14:40:00 [ERROR] Update Failed: Service Unavailable
 04-Mar-2025 14:42:58 [ERROR] Update Failed: Service Unavailable
+16-May-2025 16:52:45 [ERROR] Operation canceled: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+16-May-2025 16:55:02 [ERROR] Operation canceled: Method: GET, RequestUri: 'http://192.168.1.15:8168/api/v2/GoodsDeliveries/ProcessToCartrack/20250516', Version: 1.1, Content: <null>, Headers:
+{
+  Accept: application/json
+  Authorization: Bearer
+}
+16-May-2025 16:58:36 [ERROR] Operation canceled: Method: GET, RequestUri: 'http://192.168.1.15:8168/api/v2/GoodsDeliveries/ProcessToCartrack/20250516', Version: 1.1, Content: <null>, Headers:
+{
+  Accept: application/json
+  Authorization: Bearer
+}
+16-May-2025 17:00:41 [ERROR] Operation canceled: Method: GET, RequestUri: 'http://192.168.1.15:8168/api/v2/GoodsDeliveries/ProcessToCartrack/20250516', Version: 1.1, Content: <null>, Headers:
+{
+  Accept: application/json
+  Authorization: Bearer
+}
+16-May-2025 17:01:27 [ERROR] Operation canceled: Method: GET, RequestUri: 'http://192.168.1.15:8168/api/v2/GoodsDeliveries/ProcessToCartrack/20250516', Version: 1.1, Content: <null>, Headers:
+{
+  Accept: application/json
+  Authorization: Bearer
+}
+16-May-2025 17:02:14 [ERROR] Operation canceled: Method: GET, RequestUri: 'http://192.168.1.15:8168/api/v2/GoodsDeliveries/ProcessToCartrack/20250516', Version: 1.1, Content: <null>, Headers:
+{
+  Accept: application/json
+  Authorization: Bearer
+}
+16-May-2025 17:08:16 [ERROR] Operation canceled: Method: GET, RequestUri: 'http://192.168.1.15:8168/api/v2/GoodsDeliveries/ProcessToCartrack/20250516', Version: 1.1, Content: <null>, Headers:
+{
+  Accept: application/json
+  Authorization: Bearer
+}
+16-May-2025 17:17:08 [ERROR] Operation canceled: Method: GET, RequestUri: 'http://192.168.1.15:8168/api/v2/GoodsDeliveries/ProcessToCartrack/20250516', Version: 1.1, Content: <null>, Headers:
+{
+  Accept: application/json
+  Authorization: Bearer
+}
+16-May-2025 17:48:30 [ERROR] CREATE_DELIVERY: Internal Server Error
+16-May-2025 18:03:02 [ERROR] CREATE_DELIVERY: Internal Server Error
+16-May-2025 18:23:19 [ERROR] CREATE_DELIVERY: Internal Server Error

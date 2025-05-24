@@ -1,5 +1,6 @@
 ﻿using Duende.IdentityModel.Client;
 using Newtonsoft.Json;
+using Subur.Goods.Delivery.Models;
 using Subur.Goods.Delivery.Services.Interfaces;
 
 namespace Subur.Goods.Delivery.Services
@@ -52,7 +53,7 @@ namespace Subur.Goods.Delivery.Services
 			}
 
 			string resultContent = await result.Content.ReadAsStringAsync();
-			TokenResponse tokenResponse = JsonConvert.DeserializeObject<TokenResponse>(resultContent)!;
+			LocalTokenResponse tokenResponse = JsonConvert.DeserializeObject<LocalTokenResponse>(resultContent)!;
 
 			return tokenResponse.AccessToken!;
 		}

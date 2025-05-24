@@ -1,7 +1,8 @@
 {
   "profiles": {
     "Subur.Goods.Delivery": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "CREATE_DELIVERY"
     },
     "Container (Dockerfile)": {
       "commandName": "Docker"

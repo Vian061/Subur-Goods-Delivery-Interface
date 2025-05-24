@@ -27,6 +27,9 @@ namespace Subur.Goods.Delivery.Helper
 			string token = await _tokenService.FetchClientCredentialTokenAsync(_appConfig.IS4_Base_Url, clientCredentialsToken);
 			request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
+			string idempotencyKey = Guid.NewGuid().ToString(); // or any consistent value per request
+			request.Headers.Add("IdempotencyKey", idempotencyKey);
+
 			return await base.SendAsync(request, cancellationToken);
 		}
 	}
