@@ -17,9 +17,7 @@ jobs:
             ip: "192.168.1.10"
             destination: "D:\\Subur"
             environment: "Production"
-            configuration: "Release"
-            service_name: "SuburGoodsDeliveryService"
-
+            configuration: "Release"  
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -54,19 +52,13 @@ jobs:
             $destination = "C:\\Application\SuburGoodsDelivery"
           }
           
-          $serviceName = "${{ matrix.service_name }}"
           $source = Get-ChildItem -Recurse ./publish
           Invoke-Command -ComputerName ${{ matrix.ip }} -ScriptBlock {
-              param($destination, $source, $serviceName)
-              # Stop the Windows Service
-              if (Get-Service -Name $serviceName -ErrorAction SilentlyContinue) {
-                Stop-Service -Name $serviceName -Force
-                Start-Sleep -Seconds 5
-              }
+              param($destination, $source)
+            
               # Ensure directory exists
               if (!(Test-Path $destination)) { New-Item -Path $destination -ItemType Directory -Force }
               # Copy files to the destination
               Copy-Item -Path $source.FullName -Destination $destination -Recurse -Force
-              # Start the service
-              Start-Service -Name $serviceName
-          } -ArgumentList $destination, $source, $serviceName
+           
+          } -ArgumentList $destination, $source
