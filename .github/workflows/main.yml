@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.runner }} 
     strategy:
       matrix:
-        runner: [GoodsDelivery02, GoodsDelivery03, GoodsDelivery04, GoodsDelivery05, GoodsDelivery06, GoodsDelivery07, GoodDeliveryCloud]
+        runner: [GoodsDelivery02, GoodsDelivery03, GoodsDelivery04, GoodsDelivery05, GoodsDelivery06, GoodsDelivery07, GoodsDeliveryCloud]
         include:
           - branch: main
             ip: "192.168.1.10"
@@ -49,6 +49,11 @@ jobs:
         shell: pwsh
         run: |
           $destination = "${{ matrix.destination }}\GoodsDelivery"
+          
+          if ("${{ matrix.runner }}" -eq "GoodDeliveryCloud") {
+            $destination = "C:\\Application\SuburGoodsDelivery"
+          }
+          
           $serviceName = "${{ matrix.service_name }}"
           $source = Get-ChildItem -Recurse ./publish
           Invoke-Command -ComputerName ${{ matrix.ip }} -ScriptBlock {
