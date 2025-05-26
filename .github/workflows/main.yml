@@ -46,6 +46,16 @@ jobs:
       - name: Deploy to ${{ matrix.ip }} -> ${{ matrix.destination }}
         shell: pwsh
         run: |
+          $exeName = "Subur.Goods.Delivery.exe"
+  
+          # Stop running instance of the application if exists
+          $runningProc = Get-Process | Where-Object { $_.Path -like "*$exeName" } -ErrorAction SilentlyContinue
+          if ($runningProc) {
+              Write-Host "Stopping existing process: $exeName"
+              $runningProc | Stop-Process -Force
+              Start-Sleep -Seconds 5
+          }
+          
           $destination = "${{ matrix.destination }}\GoodsDelivery"
           
           if ("${{ matrix.runner }}" -eq "GoodDeliveryCloud") {
