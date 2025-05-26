@@ -31,14 +31,14 @@ jobs:
         if: github.ref == format('refs/heads/{0}', matrix.branch)    
         shell: pwsh
         run: |
-          $projectPath = "./Subur.Goods.Delivery.csproj"
+          $projectPath = "./Subur.Goods.Delivery/Subur.Goods.Delivery.csproj"
           dotnet build $projectPath -c ${{ matrix.configuration }}
         env:
           ASPNETCORE_ENVIRONMENT: ${{ matrix.environment }}
 
       - name: Publish Application
         run: |
-          $projectPath = "./Subur.Goods.Delivery.csproj"
+          $projectPath = "./Subur.Goods.Delivery/Subur.Goods.Delivery.csproj"
           
           if (Test-Path ./publish) { Remove-Item -Path ./publish/* -Recurse -Force }
           
