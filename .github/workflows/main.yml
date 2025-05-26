@@ -65,9 +65,10 @@ jobs:
           $source = Get-ChildItem -Recurse ./publish
           Invoke-Command -ComputerName ${{ matrix.ip }} -ScriptBlock {
               param($destination, $source)
-            
+              
               # Ensure directory exists
               if (!(Test-Path $destination)) { New-Item -Path $destination -ItemType Directory -Force }
+              
               # Copy files to the destination
               Copy-Item -Path $source.FullName -Destination $destination -Recurse -Force
            
